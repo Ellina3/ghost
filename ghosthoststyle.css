@@ -580,6 +580,7 @@
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 105px;
 }
 
 .story:first-child{
@@ -611,4 +612,234 @@
     text-align: left;     
 }
 
+.team{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding-left: 100px;
+}
 
+.teamworker img {
+    display: block;
+    margin: 0 auto;
+}
+
+.teamworker > a > img {
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
+}
+
+.teamworker > a:hover > img {
+    border: 5px solid #1f89ba;
+    border-radius: 50%;
+}
+
+.teamworker h2{
+    font-size: 17px;
+    font-family: "Lato SemiBold";
+    color: rgb(48, 48, 48);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.teamworker p{
+    font-size: 15px;
+    font-family: "Lato regular";
+    color: rgb(142, 142, 142);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.workersocial{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.workersocial i{
+    color: #bfbfbf;
+}
+
+.workersocial i:hover{
+    color: #1f89ba;
+}
+
+.feedback {
+    background: url("img/sliderimage.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.clientfeedbacks{
+    display: flex;
+  
+
+}
+
+.comments{
+    display: block;
+    margin: 0 auto;
+    width: 78%;
+}
+
+.comments h2{
+    font-size: 20px;
+    font-family: "Lato Light";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    line-height: 30px;
+}
+
+.clientname{
+    width: 23%;
+    display: block;
+    margin: 0 auto;
+}
+
+.comments p{
+    font-size: 20px;
+    font-family: "Lato Bold";
+    color: rgb(255, 255, 255);
+    text-align: left;
+    border-right: 1px solid #969696;
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
+
+/* Блок с точками */
+.owl-pagination {
+    text-align: right; /* Выравниваем точки по-середине */
+    position: absolute;
+    margin-top: -78px;
+    margin-left: 640px;
+}
+/* 1 Точка */
+.owl-page {
+	width: 8px;
+	height: 8px;
+	border: 1px solid #f4f4f4 ;
+	display: inline-block;
+    background-color: transparent;
+	margin: 12px;
+    border-radius: 50%;
+}
+/* Активная точка */
+.owl-page.active {
+	background-color: #f4f4f4;
+}
+
+.functions_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.boxicon{
+    height: 60px;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    background: #f1c40f;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon {
+    background: #f1c40f;
+}
+
+.icon:hover {
+    background: #f1c40f;
+    border: 3px solid #f1c40f;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0,0.2);
+}
+
+.icon i {
+    font-size: 25px;
+    color: white;
+    transform: translate(155%, 70%);
+}
+
+.icon:hover i {
+    font-size: 30px;
+    color: white;
+    transform: translate(120%, 50%);
+}
+
+.icon i.fas.fa-cloud {
+    font-size: 25px;
+    color: white;
+    transform: translate(50%, 65%);
+}
+
+.icon:hover i.fas.fa-cloud {
+    font-size: 30px;
+    color: white;
+    transform: translate(35%, 50%);
+}
+
+.icon i.fas.fa-arrows-alt {
+    font-size: 25px;
+    color: white;
+    transform: translate(75%, 70%);
+}
+
+.icon:hover i.fas.fa-arrows-alt {
+    font-size: 30px;
+    color: white;
+    transform: translate(55%, 50%);
+}
+
+.icon i.fas.fa-comments {
+    font-size: 25px;
+    color: white;
+    transform: translate(60%, 65%);
+}
+
+.icon:hover i.fas.fa-comments {
+    font-size: 30px;
+    color: white;
+    transform: translate(40%, 50%);
+}
+
+.features h2{
+    font-size: 18px;
+    font-family: "Lato Heavy";
+    color: rgb(48, 48, 48);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.features {
+    width: 24%;
+}
+
+.features p{
+    font-size: 16px;
+    font-family: "Lato Light";
+    color: rgb(126, 126, 126);
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 95px;
+}
+
+.footer{
+    background-color: #2a2a2a;
+}
+
+.footerlogo{
+    padding-top: 25px;
+    float: left;
+}
