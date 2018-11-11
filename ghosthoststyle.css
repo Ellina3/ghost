@@ -753,13 +753,69 @@
     position: relative;
 }
 
-.icon {
-    background: #f1c40f;
+.features:nth-child(2n) .icon {
+    height: 60px;
+    width: 60px;
+    background: #0faff1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    position: relative;
 }
+
+.features:nth-child(3n) .icon {
+    height: 60px;
+    width: 60px;
+    background: #95a5a6;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.features:nth-child(4n) .icon {
+    height: 60px;
+    width: 60px;
+    background: #f1540f;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+} 
 
 .icon:hover {
     background: #f1c40f;
     border: 3px solid #f1c40f;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0,0.2);
+}
+
+.features:nth-child(2n) .icon:hover {
+    background: #0faff1;
+    border: 3px solid #0faff1;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0,0.2);
+}
+
+.features:nth-child(3n) .icon:hover {
+    background: #95a5a6;
+    border: 3px solid #95a5a6;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0,0.2);
+}
+
+.features:nth-child(4n) .icon:hover {
+    background: #f1540f;
+    border: 3px solid #f1540f;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 2px 3px 3px 1px rgba(0, 0, 0,0.2);
@@ -837,9 +893,156 @@
 
 .footer{
     background-color: #2a2a2a;
+    padding-top: 25px;
+}
+
+.footerheader{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #4a4a4a;
 }
 
 .footerlogo{
-    padding-top: 25px;
     float: left;
+}
+
+.footernav{
+    width: 36%;
+}
+
+.footermenu li{
+    list-style: none; 
+}
+
+.footermenu li a i{
+    display: none; 
+}
+
+.footersubmenu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.footersubmenu li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Lato Medium";
+    color: #606060;
+}
+
+.footersubmenu li a:hover{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Lato Medium";
+    color: white;
+}
+
+.footerbottom{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.footerinfo:first-child{
+    width: 32%;
+    border-right: 1px solid #4a4a4a;
+}
+
+.footerinfo:nth-child(2n){
+    width: 42%;
+    border-right: 1px solid #4a4a4a;
+}
+
+.footerinfo:nth-child(3n){
+    border-right: none;
+    width: 26%;
+}
+
+.footerinfo h2{
+    width: 88%;
+    text-align: left;
+    font-size: 15px;
+    font-family: "Lato Light";
+    color: rgb(104, 104, 104);
+    padding-top: 20px;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.footerinfo h3{
+    text-align: left;
+    font-size: 15px;
+    font-family: "Lato Light";
+    color: rgb(104, 104, 104);
+    padding-bottom: 20px;
+}
+
+.footerinfo h3 span{
+    font-family: "Lato SemiBold";
+}
+
+.bottommenu{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.collumnmenu li{
+    list-style: none;
+}
+
+.collumnmenu li a{
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "Lato Light";
+    color: rgb(104, 104, 104);
+    text-align: left;
+}
+
+.collumnmenu li a:hover{
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "Lato Light";
+    color: white;
+    text-align: left;
+}
+
+.footercontacts{
+    padding-top: 20px;
+    width: 73%;
+    float: right;
+}
+
+.tel a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Lato SemiBold";
+    color: rgb(104, 104, 104);
+    text-align: left;
+    line-height: 30px;
+}
+
+.email a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Lato Light";
+    color: rgb(104, 104, 104);
+    text-align: left;
+    line-height: 30px;
+}
+
+.location a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Lato Light";
+    color: rgb(104, 104, 104);
+    text-align: left;
+    line-height: 30px;
 }
