@@ -1046,3 +1046,166 @@
     text-align: left;
     line-height: 30px;
 }
+
+@media (max-width: 768px) {
+    .container{
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        width: 70%;
+    }
+
+    .header h2 {
+        padding-top: 145px;
+    }
+
+    .header p {
+        padding-bottom: 145px;
+    }
+
+    .search select {
+        width: 15%;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
+    .domaindata {
+        width: 21%;
+    }
+
+    .packages_container {
+        flex-wrap: wrap;
+    }
+
+    .pack {
+        width: 24%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .namepack p {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+
+    .datalist li {
+        font-size: 12px;
+    }
+
+    .datalist li span {
+        font-size: 12px;
+    }
+
+    .pricepack p a {
+        font-size: 15px;
+    }
+
+    .pricepack p {
+        width: 60%;
+    }
+
+    .aboutus_container {
+        margin-top: 40px;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .story:first-child {
+        width: 100%;
+        border-right: none;
+        padding-bottom: 20px;
+        border-bottom: 2px dotted #dbdbdb;
+    }
+
+    .story h2 {
+        text-align: center;
+    }
+
+    .story p {
+        margin: 0 auto;
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        padding-left: 0px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .clientname {
+        width: 38%;
+    }
+
+    .owl-pagination {
+        margin-left: 430px;
+    }
+
+    .functions_container {
+        flex-wrap: wrap;
+        padding-top: 70px;
+    }
+
+    .features {
+        width: 50%;
+    }
+
+    .features p {
+        width: 78%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .footernav {
+        width: 60%;
+    }
+
+    .footerheader {
+        padding-bottom: 20px;
+    }
+
+    .footerbottom {
+        display: block;
+        margin-top: 0px;
+        padding-bottom: 160px;
+    }
+
+    .bottommenu {
+        width: 80%;
+    }
+
+    .footerinfo:first-child {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #4a4a4a;
+    }
+
+    .footerinfo h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footerinfo h3 {
+        text-align: center;
+    }
+
+    .footerinfo:nth-child(2n) {
+        width: 50%;
+        border-right: none;
+        border-right: 1px solid #4a4a4a;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .footerinfo:nth-child(3n) {
+        border-right: none;
+        width: 220%;
+        margin-top: 20px;
+    }
+}
+

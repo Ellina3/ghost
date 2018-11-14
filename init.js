@@ -7,6 +7,7 @@ $(document).ready(function(){
 	carousel.owlCarousel({
         // Точки под каруселью
         itemsDesktop: [1600, 1],
+        itemsTablet: [768,1],
         loop: true,
         autoPlay: true,
         autoPlayTimeout: 500,
