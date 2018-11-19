@@ -64,10 +64,12 @@
     src: url('fonts/Lato-Thin.woff');
 }
 
-* {
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
-    padding:0;
-}
+    transition: .5s ease-in-out;
+    }
 
 .header {
     background: url("img/Headerghosthost.jpg") no-repeat center center;
@@ -162,10 +164,20 @@
     border-right: 30px solid transparent;
     height: 0;
     width: 50%;
+    cursor: pointer;
+}
+
+.login a:hover{
+    color: black;
 }
 
 .register{
     width: 50%;
+    cursor: pointer;
+}
+
+.register a:hover{
+    color: black;
 }
 
 .membership p > a{
@@ -281,16 +293,6 @@
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
-}
-
-.domaindata:hover{
-    background:  #d9d9d9;
-    border-radius: 35%;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0,0.4);
-}
-
-.domaindata:hover p{
-    color:  #ffffff;
 }
 
 .domaindata p{
@@ -1207,5 +1209,273 @@
         width: 220%;
         margin-top: 20px;
     }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 400px;
+    }
+
+    .logo{
+        float: left;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: none;
+    }
+
+    .navigation{
+        float: right;
+        margin: 0 auto; 
+        padding-top: 25px;
+        padding-bottom: 20px;
+        border-bottom: none;  
+    }
+
+    .menu > li > a{
+        display: block;
+        margin: 0 auto;
+        width: 16px;
+    }
+
+    .menu > li > a > i.fas.fa-bars{
+        text-align: center;
+        color: white;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        right: 0px; 
+        text-align: left;
+        width: 100%;
+        top: 70px;
+    }
+
+    .submenu li:hover{
+        padding-bottom: 0px;
+        border-bottom: none; 
+    }
+
+    .submenu > li > a {
+        display: block;
+        line-height: 67px;
+        border-bottom: 1px solid black;
+        font-size: 25px;
+    }
+
+    ul.submenu > li > a:hover {
+        color: black;
+    }
+    
+    ul.menu > li:hover > ul.submenu {
+        display: block;
+        background-color: #4a4a4a;
+    }
+
+    .register p {
+        text-align: center;
+        padding-top: 28px;
+        padding-bottom: 9px;
+    }
+
+    .login {
+        border-top: 85px solid #21424a;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .login p {
+        text-align: center;
+        padding-top: 64px;
+        padding-bottom: 50px;
+        margin-top: -123px;
+    }
+
+    .domain_container h2 {
+        margin-top: 40px;
+        font-size: 24px;
+        font-family: "Lato Heavy";
+        color: rgb(56, 55, 55);
+        text-align: center;
+    }
+
+    .search select {
+        width: 26%;
+        padding-left: 5px;
+    }
+
+    .search input {
+        width: 50%;
+        padding-left: 5px;
+    }
+
+    .domaindata {
+        width: 19%;
+    }
+
+    .domaindata p {
+        font-size: 12px;
+    }
+
+    .domaindata:first-child {
+        padding-top: 5px;
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    
+    .domaindata:nth-child(2n) {
+        padding-top: 5px;
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .domaindata:nth-child(3n) {
+        padding-top: 5px;
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .domaindata:nth-child(4n) {
+        padding-top: 5px;
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .domaindata:nth-child(5n) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-bottom: none;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    .domaindata:nth-child(6n) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-bottom: none;
+        margin-bottom: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .domaindata:nth-child(7n) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-bottom: none;
+        margin-bottom: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .domaindata:nth-child(8n) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-bottom: none;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        margin-left: 5px;
+    }
+
+    .pack {
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .namepack p {
+        font-size: 18px;
+    }
+
+    .datalist li span {
+        font-size: 20px;
+    }
+
+    .datalist li {
+        font-size: 20px;
+    }
+
+    .pricepack p a{
+        padding-bottom: 35px;
+        font-size: 20px;
+    }
+    
+    .pricepack:hover p a{
+        padding-bottom: 35px;
+        font-size: 20px;
+    }
+
+    .story p {
+        width: 86%;
+    }
+
+    .team {
+        display: block;
+        width: 30%;
+    }
+
+    .workersocial {
+        padding-bottom: 30px;
+    }
+
+    .aboutus_container {
+        margin-bottom: 0px;
+    }
+
+    .feedback{
+        display: none;
+    }
+
+    .functions_container {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        border-top: 2px dotted #dbdbdb;
+    }
+
+    .bottommenu {
+        width: 70%;
+        padding-top: 0px;
+    }
+
+    .footerinfo:nth-child(2n) {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #4a4a4a;
+        float: none;
+        padding-bottom: 20px;
+    }
+
+    .footercontacts {
+        padding-top: 20px;
+        width: 75%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .footerinfo:nth-child(3n) {
+        border-right: none;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .footerbottom {
+        display: block;
+        margin-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    
+
+    
+
+
 }
 
