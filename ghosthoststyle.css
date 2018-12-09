@@ -1051,7 +1051,7 @@
 
 @media (max-width: 768px) {
     .container{
-        width: 730px;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -1213,7 +1213,8 @@
 
 @media (max-width: 480px) {
     .container {
-        width: 400px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .logo{
@@ -1274,9 +1275,7 @@
     }
 
     .register p {
-        text-align: center;
-        padding-top: 28px;
-        padding-bottom: 9px;
+        line-height: 45px;
     }
 
     .login {
@@ -1471,11 +1470,5 @@
         margin-top: 0px;
         padding-bottom: 20px;
     }
-
-    
-
-    
-
-
 }
 
